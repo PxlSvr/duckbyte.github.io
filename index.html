@@ -15,6 +15,17 @@
 	background-size: 400% 400%;
 	animation: gradient 2s ease 1;
 }
+@font-face {
+  font-family: FFFFORWA;
+  src: url('./Fonts/FFFFORWA.ttf');
+}
+            #landingpage {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, #ee7752, #dce73c, #ee7752, #dce73c);
+	background-size: 400% 400%;
+	animation: gradient 2s ease 1;
+}
 
 @keyframes gradient {
 	0% {
@@ -64,15 +75,34 @@
                 height: 100%;
                 background-color: aliceblue;
                 display: table;
+                position: relative;
+            }
+            #SoulsofTitle {
+                position: absolute;
+                color: white;
+                font-family: 'FFFFORWA'; /* Name your font family */
+  font-size: 7em;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  z-index: 1;
             }
             #SoulsofIframe {
-                position: relative;
+                position: absolute;
                 display: block;
                 top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 206px;
   height: 165px;
+  z-index: 1;
+            }
+            #soulsbackground{
+                position: relative;
+                display: block;
             }
         </style>
     </head>
@@ -83,6 +113,10 @@
             <image src="duckbyte-Logo.png" id="Logo">
         </div>
         <div id="Soulsof">
+            <h2 id="SoulsofTitle">Souls of Nintria</h2>
+            <video id="soulsbackground" loop height="100%" autoplay muted>
+                <source src="soulsvid.mp4" type="video/mp4">
+            </video>
             <iframe id="SoulsofIframe" frameborder="0" src="https://itch.io/embed/2252543?linkback=true&amp;border_width=0"><a href="https://pixelsavior.itch.io/souls-of-nintria">Souls of Nintria by DuckByte</a></iframe>
         </div>
     </body>
