@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+            }
+            @font-face {
+  font-family: moreSugar;
+  src: url('./Fonts/MoreSugar-Thin.ttf');
+}
+            #landingpage {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(-45deg, #ee7752, #dce73c, #ee7752, #dce73c);
+	background-size: 400% 400%;
+	animation: gradient 2s ease 1;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 0%;
+	}
+	
+	100% {
+		background-position: 0% 0%;
+	}
+
+}
+            
+            #LogoTitle {
+  font-family: 'moreSugar'; /* Name your font family */
+  font-size: 7em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+            }
+            #LogoSubTitle {
+  font-family: 'moreSugar'; /* Name your font family */
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 1;
+  color: white;
+            }
+            #Logo {
+                display: block;
+  width: 22em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+            }
+            #Soulsof {
+                width: 100%;
+                height: 100%;
+                background-color: aliceblue;
+                display: table;
+            }
+            #SoulsofIframe {
+                position: relative;
+                display: block;
+                top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 206px;
+  height: 165px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="landingpage">
+            <h1 id="LogoTitle">Duckbyte Games</h1>
+            <h2 id="LogoSubTitle">Games worth a bite</h2>
+            <image src="duckbyte-Logo.png" id="Logo">
+        </div>
+        <div id="Soulsof">
+            <iframe id="SoulsofIframe" frameborder="0" src="https://itch.io/embed/2252543?linkback=true&amp;border_width=0"><a href="https://pixelsavior.itch.io/souls-of-nintria">Souls of Nintria by DuckByte</a></iframe>
+        </div>
+    </body>
+</html>
